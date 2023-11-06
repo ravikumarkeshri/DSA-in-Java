@@ -2,7 +2,7 @@
 // array so that 0s come first followed by 1s. Also find the minimum number
 // of swaps required to sort the array.
 
-package SortingProblems;
+
 import java.util.Random;
 
 public class Partition_0_and_1 {

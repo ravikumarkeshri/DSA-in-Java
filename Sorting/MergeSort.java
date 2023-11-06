@@ -1,4 +1,4 @@
-package JavaBook.Sorting;
+package Sorting;
 
 public class MergeSort {
 

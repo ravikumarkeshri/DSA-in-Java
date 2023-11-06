@@ -1,4 +1,4 @@
-package JavaBook.Sorting;
+package Sorting;
 
 public class QuickSort {
     private void Q_sort(int array[], int lower, int upper){
