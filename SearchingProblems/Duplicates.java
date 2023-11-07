@@ -3,11 +3,11 @@
 // Time Complexity is O(n2) and Space Complexity is O(1)
 package SearchingProblems;
 
-import java.sql.Time;
+
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.HashSet;
-import java.util.Hashtable;
+
 import java.util.Map;
 import java.util.Random;
 
