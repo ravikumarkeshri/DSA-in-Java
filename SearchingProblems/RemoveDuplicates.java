@@ -1,6 +1,7 @@
 package SearchingProblems;
 
 
+import java.util.Arrays;
 import java.util.HashSet;
 
 import java.util.Random;
@@ -29,6 +30,21 @@ public class RemoveDuplicates{
         
        
     }
+    public int[] removeDuplicatesMethod2(int[] arr, int size){
+        int j = 0;
+        int i;
+        Arrays.sort(arr);
+        for(i = 1 ; i<size; i++){
+            if(arr[i] != arr[j]){
+                j++;
+                arr[j] = arr[i];
+                
+            }
+        }
+        int[] temp = Arrays.copyOf(arr, j+1);
+        return temp;
+        // Overall Time Complexity = O(nlogn).
+    }
     //  public int[] removeDuplicatesMethod1(int[] arr, int size){
     //     int temp[] = new int[size];
     //     int counter = 0;
@@ -53,14 +69,17 @@ public class RemoveDuplicates{
         RemoveDuplicates rd = new RemoveDuplicates();
         int size = 20;
         int arr[] = new int[size];
-        int temp[] = new int[size];
+        int[] temp1 = rd.removeDuplicatesMethod2(arr,size);
         Random r = new Random();
         for(int i = 0; i<size; i++){
             arr[i] = r.nextInt(40);
         }
         System.out.println();
         rd.PrintArr(arr, size);
-        rd.removeDuplicatesMethod(arr, size);
+        // rd.removeDuplicatesMethod(arr, size);
+        for (int number : temp1) {
+            System.out.print(number + " ");
+        }
        
       
         // temp = rd.removeDuplicatesMethod1(arr, size);
